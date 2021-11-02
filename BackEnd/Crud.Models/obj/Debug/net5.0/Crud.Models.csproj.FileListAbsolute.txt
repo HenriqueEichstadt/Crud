@@ -1,0 +1,12 @@
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.Models\bin\Debug\net5.0\Crud.Models.deps.json
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.Models\bin\Debug\net5.0\Crud.Models.dll
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.Models\bin\Debug\net5.0\ref\Crud.Models.dll
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.Models\bin\Debug\net5.0\Crud.Models.pdb
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.Models\obj\Debug\net5.0\Crud.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.Models\obj\Debug\net5.0\Crud.Models.AssemblyInfoInputs.cache
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.Models\obj\Debug\net5.0\Crud.Models.AssemblyInfo.cs
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.Models\obj\Debug\net5.0\Crud.Models.csproj.CoreCompileInputs.cache
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.Models\obj\Debug\net5.0\Crud.Models.dll
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.Models\obj\Debug\net5.0\ref\Crud.Models.dll
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.Models\obj\Debug\net5.0\Crud.Models.pdb
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.Models\obj\Debug\net5.0\Crud.Models.csproj.AssemblyReference.cache

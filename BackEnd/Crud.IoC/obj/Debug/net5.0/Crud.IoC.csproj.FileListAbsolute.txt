@@ -1,0 +1,17 @@
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.IoC\bin\Debug\net5.0\Crud.IoC.deps.json
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.IoC\bin\Debug\net5.0\Crud.IoC.dll
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.IoC\bin\Debug\net5.0\ref\Crud.IoC.dll
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.IoC\bin\Debug\net5.0\Crud.IoC.pdb
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.IoC\bin\Debug\net5.0\Crud.DataAccess.dll
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.IoC\bin\Debug\net5.0\Crud.Models.dll
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.IoC\bin\Debug\net5.0\Crud.DataAccess.pdb
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.IoC\bin\Debug\net5.0\Crud.Models.pdb
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.IoC\obj\Debug\net5.0\Crud.IoC.csproj.AssemblyReference.cache
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.IoC\obj\Debug\net5.0\Crud.IoC.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.IoC\obj\Debug\net5.0\Crud.IoC.AssemblyInfoInputs.cache
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.IoC\obj\Debug\net5.0\Crud.IoC.AssemblyInfo.cs
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.IoC\obj\Debug\net5.0\Crud.IoC.csproj.CoreCompileInputs.cache
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.IoC\obj\Debug\net5.0\Crud.IoC.dll
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.IoC\obj\Debug\net5.0\ref\Crud.IoC.dll
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.IoC\obj\Debug\net5.0\Crud.IoC.pdb
+D:\Desktop\Trabalhos FURB\Crud\BackEnd\Crud.IoC\obj\Debug\net5.0\Crud.IoC.csproj.CopyComplete

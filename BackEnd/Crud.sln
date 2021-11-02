@@ -7,9 +7,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApplication", "WebApplic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAPI", "WebAPI", "{3DC418D8-5EBE-47D9-B7FB-17B0E40D0558}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crud.Api", "Crud.Api\Crud.Api.csproj", "{4A8C8B0D-8452-4487-8DE0-A04B765D0DC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Crud.Api", "Crud.Api\Crud.Api.csproj", "{4A8C8B0D-8452-4487-8DE0-A04B765D0DC6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3D4C1396-E9BF-4436-B677-4ED6AE96185E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Crud.IoC", "Crud.IoC\Crud.IoC.csproj", "{745C0919-7241-4C11-AE2F-4BFBE08142FF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Crud.DataAccess", "Crud.DataAccess\Crud.DataAccess.csproj", "{17EC231D-64FB-4B23-A6F3-A514D84E17A1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Crud.Models", "Crud.Models\Crud.Models.csproj", "{26FC11C5-E971-4AF1-8C00-DAD9B9BB26F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{3A4C2FFC-A825-490C-B7A2-72A061D5CE9B}"
+	ProjectSection(SolutionItems) = preProject
+		..\docker-compose.yml = ..\docker-compose.yml
+		Dockerfile = Dockerfile
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,12 +33,27 @@ Global
 		{4A8C8B0D-8452-4487-8DE0-A04B765D0DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A8C8B0D-8452-4487-8DE0-A04B765D0DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A8C8B0D-8452-4487-8DE0-A04B765D0DC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{745C0919-7241-4C11-AE2F-4BFBE08142FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{745C0919-7241-4C11-AE2F-4BFBE08142FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{745C0919-7241-4C11-AE2F-4BFBE08142FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{745C0919-7241-4C11-AE2F-4BFBE08142FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17EC231D-64FB-4B23-A6F3-A514D84E17A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17EC231D-64FB-4B23-A6F3-A514D84E17A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17EC231D-64FB-4B23-A6F3-A514D84E17A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17EC231D-64FB-4B23-A6F3-A514D84E17A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26FC11C5-E971-4AF1-8C00-DAD9B9BB26F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26FC11C5-E971-4AF1-8C00-DAD9B9BB26F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26FC11C5-E971-4AF1-8C00-DAD9B9BB26F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26FC11C5-E971-4AF1-8C00-DAD9B9BB26F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4A8C8B0D-8452-4487-8DE0-A04B765D0DC6} = {3DC418D8-5EBE-47D9-B7FB-17B0E40D0558}
+		{745C0919-7241-4C11-AE2F-4BFBE08142FF} = {3DC418D8-5EBE-47D9-B7FB-17B0E40D0558}
+		{17EC231D-64FB-4B23-A6F3-A514D84E17A1} = {3DC418D8-5EBE-47D9-B7FB-17B0E40D0558}
+		{26FC11C5-E971-4AF1-8C00-DAD9B9BB26F9} = {3DC418D8-5EBE-47D9-B7FB-17B0E40D0558}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28D8AC72-2DC8-442F-9491-D1297DD706CD}

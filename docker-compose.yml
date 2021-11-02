@@ -1,0 +1,50 @@
+﻿version: '3.4'
+ 
+services:
+ 
+  postgresql_database:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin1234
+      - POSTGRES_DB=crudDb
+    ports:
+      - "5432:5432"
+    restart: always
+    volumes:
+      - database-data:/var/lib/postgresql/data/
+    networks:
+      - my_network
+     
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=pgadmin4@pgadmin.org
+      - PGADMIN_DEFAULT_PASSWORD=admin1234
+    ports:
+      - "5050:80"
+    restart: always
+    volumes:
+      - pgadmin:/root/.pgadmin
+    networks:
+      - my_network
+
+  crudapi:
+    image: crudapi:latest
+    build:
+      context: BackEnd
+      dockerfile: Dockerfile
+    ports:
+      - 6060:80
+    depends_on:
+      - postgresql_database
+    networks:
+      - my_network
+ 
+volumes:
+  database-data:
+  pgadmin:
+
+networks:
+  my_network:
+    driver: bridge
