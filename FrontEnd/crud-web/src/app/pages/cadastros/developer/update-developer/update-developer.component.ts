@@ -38,7 +38,7 @@ export class UpdateDeveloperComponent implements OnInit {
   buildForm() {
     this.developerForm = this.fb.group({
       id: [this.entity.id, []],
-      nome: [this.entity.nome, [Validators.required, Validators.minLength(5), Validators.maxLength(100)]],
+      nome: [this.entity.nome, [Validators.required, Validators.minLength(4), Validators.maxLength(100)]],
       sexo: [this.entity.sexo, [Validators.required,  Validators.maxLength(1)]],
       idade: [this.entity.idade, [Validators.required, Validators.maxLength(3)]],
       hobby: [this.entity.hobby, [Validators.required, Validators.minLength(5), Validators.maxLength(100) ]],

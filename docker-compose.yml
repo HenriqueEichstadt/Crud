@@ -40,6 +40,14 @@ services:
       - postgresql_database
     networks:
       - my_network
+
+  crudweb:
+    image: crudweb:latest
+    build:
+      context: FrontEnd/crud-web
+      dockerfile: Dockerfile
+    ports:
+      - 8081:80
  
 volumes:
   database-data:
