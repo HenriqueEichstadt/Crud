@@ -1,0 +1,32 @@
+<h1>Desenvolvedores Cadastrados</h1>
+<div class="adicionar-registro">
+    <a nz-button nzType="primary" [routerLink]="['./insert']">Adicionar</a>
+</div>
+<nz-table #basicTable [nzData]="developers">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Data de nascimento</th>
+            <th>Hobby</th>
+            <th>Ação</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of basicTable.data" [routerLink]="['./view/' + data.id]">
+            <td>{{ data.id }}</td>
+            <td>{{ data.nome }}</td>
+            <td>{{ this.converterSexo(data.sexo) }}</td>
+            <td>{{ data.idade }}</td>
+            <td>{{ data.dataNascimento | date: 'dd/MM/yyyy' }}</td>
+            <td>{{ data.hobby }}</td>
+            <td (click)="$event.stopPropagation()">
+                <a [routerLink]="['./update/' + data.id]" >Editar</a>
+                <nz-divider nzType="vertical"></nz-divider>
+                <a (click)="showDeleteConfirm(data.id)">Excluir</a>
+            </td>
+        </tr>
+    </tbody>
+</nz-table>

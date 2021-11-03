@@ -1,0 +1,47 @@
+<h1>Vizualização de Desenvolvedor</h1>
+
+<div nz-row>
+    <div nz-col nzXs="2" nzSm="4" nzMd="6" nzLg="8" nzXl="10">
+        <label>Id</label>
+        <p><strong>{{entity?.id}}</strong></p>
+    </div>
+</div>
+
+<div nz-row>
+    <div nz-col nzXs="2" nzSm="4" nzMd="6" nzLg="8" nzXl="10">
+        <label>Nome</label>
+        <p><strong>{{entity?.nome}}</strong></p>
+    </div>
+</div>
+
+<div nz-row>
+    <div nz-col nzXs="2" nzSm="4" nzMd="6" nzLg="8" nzXl="10">
+        <label>Sexo</label>
+        <p><strong>{{this.converterSexo(entity?.sexo)}}</strong></p>
+    </div>
+</div>
+
+<div nz-row>
+  <div nz-col nzXs="2" nzSm="4" nzMd="6" nzLg="8" nzXl="10">
+      <label>Data de nascimento</label>
+      <p><strong>{{entity?.dataNascimento | date: 'dd/MM/yyyy'}}</strong></p>
+  </div>
+</div>
+
+<div nz-row>
+  <div nz-col nzXs="2" nzSm="4" nzMd="6" nzLg="8" nzXl="10">
+      <label>Idade</label>
+      <p><strong>{{entity?.idade}}</strong></p>
+  </div>
+</div>
+
+<div nz-row>
+  <div nz-col nzXs="2" nzSm="4" nzMd="6" nzLg="8" nzXl="10">
+      <label>Hobby</label>
+      <p><strong>{{entity?.hobby}}</strong></p>
+  </div>
+</div>
+
+<div nz-row>
+    <button nz-button nzType="default" (click)="voltar()">Voltar</button>
+</div>

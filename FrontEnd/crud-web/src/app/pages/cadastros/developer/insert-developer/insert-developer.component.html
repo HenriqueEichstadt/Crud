@@ -1,0 +1,96 @@
+<h1>Cadastro de Desenvolvedor</h1>
+<form nz-form [formGroup]="developerForm" (ngSubmit)="submitForm()">
+
+    <div nz-row>
+        <div nz-col nzXs="2" nzSm="4" nzMd="6" nzLg="8" nzXl="7">
+            <nz-form-label nzFor="nome" nzRequired>Nome</nz-form-label>
+            <nz-form-item>
+                <nz-form-control [nzErrorTip]="nome">
+                    <input nz-input id="nome" formControlName="nome" />
+
+                    <ng-template #nome let-control>
+                      <ng-container *ngIf="control.hasError('minlength')">Mínimo de 5 caracteres</ng-container>
+                      <ng-container *ngIf="control.hasError('maxlength')">Máximo de 100 caracteres</ng-container>
+                      <ng-container *ngIf="control.hasError('required')">Nome obrigatório</ng-container>
+                    </ng-template>
+
+                </nz-form-control>
+            </nz-form-item>
+        </div>
+    </div>
+
+    <div nz-row>
+        <div nz-col nzXs="2" nzSm="4" nzMd="6" nzLg="8" nzXl="2">
+            <nz-form-label nzFor="sexo" nzRequired>Sexo</nz-form-label>
+            <nz-form-item>
+                <nz-form-control [nzErrorTip]="sexo">
+                    <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Selecione o sexo" id="sexo" formControlName="sexo">
+                      <nz-option nzLabel="Masculino" nzValue="M"></nz-option>
+                      <nz-option nzLabel="Feminino" nzValue="F"></nz-option>
+                      <nz-option nzLabel="Não Especificado" nzValue="Z"></nz-option>
+                    </nz-select>
+                    <ng-template #sexo let-control>
+                      <ng-container *ngIf="control.hasError('maxlength')">Máximo de 1 caractere</ng-container>
+                      <ng-container *ngIf="control.hasError('required')">Sexo obrigatório</ng-container>
+                    </ng-template>
+                </nz-form-control>
+            </nz-form-item>
+        </div>
+    </div>
+
+    <div nz-row>
+      <div nz-col nzXs="2" nzSm="4" nzMd="6" nzLg="8" nzXl="4">
+          <nz-form-label nzFor="dataNascimento" nzRequired>Data de nascimento</nz-form-label>
+          <nz-form-item>
+            <nz-form-control [nzErrorTip]="dataNascimento">
+              <nz-date-picker nzFormat="dd/MM/yyyy" (ngModelChange)="atualizaIdade($event)" formControlName="dataNascimento"></nz-date-picker>
+              <ng-template #dataNascimento let-control>
+                <ng-container *ngIf="control.hasError('required')">Data de nascimento obrigatória</ng-container>
+              </ng-template>
+            </nz-form-control>
+            </nz-form-item>
+      </div>
+      <div nz-col nzXs="2" nzSm="4" nzMd="6" nzLg="8" nzXl="1">
+        <nz-form-label nzFor="idade">Idade</nz-form-label>
+        <nz-form-item>
+            <nz-form-control [nzErrorTip]="idade">
+                <input nz-input id="idade" formControlName="idade" [disabled]="true" [readonly]="true" />
+                <ng-template #idade let-control>
+                  <ng-container *ngIf="control.hasError('maxlength')">Máximo de 3 caracteres</ng-container>
+                  <ng-container *ngIf="control.hasError('required')">Idade obrigatória</ng-container>
+                </ng-template>
+              </nz-form-control>
+        </nz-form-item>
+    </div>
+    </div>
+
+
+
+    <div nz-row>
+      <div nz-col nzXs="2" nzSm="4" nzMd="6" nzLg="8" nzXl="10">
+          <nz-form-label nzFor="hobby" nzRequired>Hobby</nz-form-label>
+          <nz-form-item>
+              <nz-form-control [nzErrorTip]="hobby">
+                  <textarea nz-input rows="4" id="hobby" formControlName="hobby"></textarea>
+
+                  <ng-template #hobby let-control>
+                    <ng-container *ngIf="control.hasError('minlength')">Mínimo de 5 caracteres</ng-container>
+                    <ng-container *ngIf="control.hasError('maxlength')">Máximo de 100 caracteres</ng-container>
+                    <ng-container *ngIf="control.hasError('required')">Hobby obrigatório</ng-container>
+                  </ng-template>
+
+              </nz-form-control>
+          </nz-form-item>
+      </div>
+    </div>
+
+    <div nz-row class="register-area">
+      <nz-form-control nz-col nzSm="2" nzXs="24">
+          <button nz-button nzType="default" (click)="voltar()">Voltar</button>
+      </nz-form-control>
+      <nz-form-control nz-col nzSm="2" nzXs="24">
+        <button nz-button nzType="primary" (click)="salvar()">Salvar</button>
+    </nz-form-control>
+    </div>
+
+</form>
