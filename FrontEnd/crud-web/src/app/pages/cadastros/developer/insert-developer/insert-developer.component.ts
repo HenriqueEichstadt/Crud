@@ -38,7 +38,7 @@ export class InsertDeveloperComponent implements OnInit {
       nome: [null, [Validators.required, Validators.minLength(4), Validators.maxLength(100)]],
       sexo: [null, [Validators.required,  Validators.maxLength(1)]],
       idade: [null, [Validators.required, Validators.maxLength(3)]],
-      hobby: [null, [Validators.required, Validators.minLength(5), Validators.maxLength(100) ]],
+      hobby: [null, [Validators.required, Validators.minLength(5), Validators.maxLength(200) ]],
       dataNascimento: [null, [Validators.required ]]
     }, {
       updateOn: 'blur'

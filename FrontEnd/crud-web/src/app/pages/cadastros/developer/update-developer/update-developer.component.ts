@@ -41,7 +41,7 @@ export class UpdateDeveloperComponent implements OnInit {
       nome: [this.entity.nome, [Validators.required, Validators.minLength(4), Validators.maxLength(100)]],
       sexo: [this.entity.sexo, [Validators.required,  Validators.maxLength(1)]],
       idade: [this.entity.idade, [Validators.required, Validators.maxLength(3)]],
-      hobby: [this.entity.hobby, [Validators.required, Validators.minLength(5), Validators.maxLength(100) ]],
+      hobby: [this.entity.hobby, [Validators.required, Validators.minLength(5), Validators.maxLength(200) ]],
       dataNascimento: [this.entity.dataNascimento, [Validators.required ]]
     })
   }
