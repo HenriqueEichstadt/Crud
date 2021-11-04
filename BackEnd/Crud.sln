@@ -19,6 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{3A4C2F
 	ProjectSection(SolutionItems) = preProject
 		..\docker-compose.yml = ..\docker-compose.yml
 		Dockerfile = Dockerfile
+		..\docker-compose.dev.yml = ..\docker-compose.dev.yml
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crud.Api.UnitTests", "Crud.Api.UnitTests\Crud.Api.UnitTests.csproj", "{19DBEB58-FDAB-4899-B960-3AE9FF089974}"

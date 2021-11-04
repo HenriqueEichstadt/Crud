@@ -14,7 +14,7 @@ Este repositório contém o desenvolvimento dois projetos sendo uma API Back-End
  - CRUD completo de uma entidade;
 
 
-# Como compilar aplicações (Não é necessário compilar para rodar em Docker)
+# Como compilar aplicações (Não é necessário compilar para rodar usando imagens do DockerHub)
 
 Frameworks necessários para compilação da API Back-End:
  - .NET 5.0;
@@ -34,7 +34,8 @@ Frameworks necessários para compilação do cliente Front-End:
 
 Será criado uma network chamada 'crud' contendo 4 containers docker:
 
- - crud-pgadmin-1: ferramenta para gerenciamento do banco de dados PostgreSQL;
- - crud-postgresql_database-1: banco de dados PostgreSQL;
- - crud-crudweb-1: cliente Front-End desenvolvido, link de acesso: http://localhost:8081/home
- - crud-crudapi-1: API Backend desenvolvida, link de acesso: http://localhost:6060/swagger
+- crud: network
+	- crud-pgadmin-1: ferramenta para gerenciamento do banco de dados PostgreSQL;
+	- crud-postgresql_database-1: banco de dados PostgreSQL;
+	- crud-crudweb-1: cliente Front-End desenvolvido, link de acesso: http://localhost:8081/home
+	- crud-crudapi-1: API Backend desenvolvida, link de acesso: http://localhost:6060/swagger

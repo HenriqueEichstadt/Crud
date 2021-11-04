@@ -31,6 +31,9 @@ services:
 
   crudapi:
     image: henriqueeichstadt/crudapi:1.0
+    build:
+      context: BackEnd
+      dockerfile: Dockerfile
     ports:
       - 6060:80
     depends_on:
@@ -40,6 +43,9 @@ services:
 
   crudweb:
     image: henriqueeichstadt/crudweb:1.0
+    build:
+      context: FrontEnd/crud-web
+      dockerfile: Dockerfile
     ports:
       - 8081:80
     depends_on:
