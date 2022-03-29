@@ -32,10 +32,20 @@ namespace Crud.Api
             services.AddControllers();
 
             // Contexto de banco de dados da aplicação
-            services.AddDbContext<ApplicationContext>(options =>
+            if (Configuration.GetSection("RunningIn").Value == "WEBAPI")
             {
-                options.UseNpgsql(Configuration.GetConnectionString("ConnStrApi"));
-            });
+                services.AddDbContext<ApplicationContext>(options =>
+                {
+                    options.UseSqlServer(Configuration.GetConnectionString("ConnStrSQLServer"));
+                });
+            }
+            else if (Configuration.GetSection("RunningIn").Value == "DOCKER")
+            {
+                services.AddDbContext<ApplicationContext>(options =>
+                {
+                    options.UseNpgsql(Configuration.GetConnectionString("ConnStrDocker"));
+                });
+            }
 
             services.AddSwaggerGen(c =>
             {
